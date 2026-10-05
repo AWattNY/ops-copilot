@@ -1,0 +1,20 @@
+# Python 3.11+ recommended (3.10 minimum)
+
+# Day 1
+ollama>=0.5
+
+# Day 2 (Project 1)
+langchain>=1.4,<2
+langchain-ollama>=1.0
+langgraph-checkpoint-sqlite>=2.0
+
+# LangChain ships patch releases often. Once things work, freeze exact versions:
+#   pip freeze > requirements.lock
+
+# Added later (don't install yet):
+# Day 2: langchain-anthropic or langchain-openai (hosted model)
+# Day 3: pytest  (the starter tests use only the standard library: python -m unittest)
+# Day 4: langchain[mcp]>=1.4   (optional: fastmcp, to publish your own server)
+# Day 5: an embeddings store, e.g. langchain-chroma; rank-bm25 for the lexical baseline
+# Day 8: fastapi, uvicorn, plus langsmith or opentelemetry  (optional: langgraph-checkpoint-postgres)
+# Project 2 (Days 9-13) uses its own minimal deps: provider SDK, ollama, mcp, pydantic

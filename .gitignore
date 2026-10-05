@@ -1,0 +1,22 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Local agent state: conversation history can contain file contents from the target repo
+*.db
+*.db-shm
+*.db-wal
+agent_memory.db
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Eval outputs and traces can contain repo contents and model transcripts.
+# Commit curated summaries (e.g. evals/reports/*.md) deliberately, not raw runs.
+evals/runs/
+traces/
+chat-gpt-analysis.md
