@@ -13,17 +13,17 @@ written down here become eval cases, `DECISIONS.md` updates, and interview examp
 | Mac / chip / memory | 64 GB |
 | Python version (`python3 --version`) | Python 3.14.7 |
 | Ollama version (`ollama --version`) | 0.35.1 |
-| LangChain version (`pip show langchain`) | |
+| LangChain version (`pip show langchain`) | 1.4.3 |
 | Fork URL | https://github.com/AWattNY/full-stack-fastapi-template |
 | Pinned fork commit (`git rev-parse HEAD`) | 1762adac607a1b29cfc4da129557780beea71616 (branch agent-playground) |
 | `AGENT_WORKSPACE` | /Users/awatt/code/fastapi-app/backend |
 | `AGENT_NUM_CTX` | 65536 |
-| `ollama ps` shows (CONTEXT / PROCESSOR) | |
+| `ollama ps` shows: 65536 / 100% GPU (12 GB)
 | Main model (after the Day 1 bake-off, see `DECISIONS.md` D5) | |
 | Hosted model + spend cap | |
-| `python -m unittest` result | |
-| First real tool call (`-> list_dir` seen?) | |
-| `requirements.lock` committed? | |
+| `python -m unittest` result: 17 passed ✅
+| First real tool call (`-> list_dir` seen?) Yes: list_dir({'path': ''}), output matched ls -a
+| `requirements.lock` committed? | Yes |
 
 ---
 
